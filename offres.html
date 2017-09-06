@@ -1,0 +1,515 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Petites annonces dans toute la France - leboncoin</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <!-- Place favicon.ico in the root directory -->
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+
+        <!-- header  -->
+        <header>
+
+          <nav>
+
+            <div class="navleft">
+              <div class="mobile">
+                <p>menu</p>
+                <div class="down">
+                  <a href="index.html">accueil</a>
+                  <a href="annonce.html">déposer une annonce</a>
+                  <a href="offres.html">offres</a>
+                </div>
+              </div>
+
+              <figure>
+                  <a href="index.html"><img src="img/logo.svg" alt="leboncoin image"></a>
+              </figure>
+
+              <ul>
+                <li><a href="index.html">accueil</a></li>
+                <li><a href="annonce.html">déposer une annonce</a></li>
+                <li><a href="offres.html">offres</a></li>
+                <li><a href="#">demandes</a></li>
+                <li><a href="#">mes annonces</a></li>
+                <li><a href="#">boutiques</a></li>
+              </ul>
+            </div>
+
+            <aside>
+              <i class="large material-icons">perm_identity</i>
+              <a href="#">Se connecter</a>
+            </aside>
+
+          </nav>
+
+        </header>
+
+        <h1 id="tt">Annonces : Toute la France</h1>
+
+        <!-- container -->
+        <section class="containeroffres">
+
+          <div class="offres1">
+
+            <div class="part1">
+
+              <form action="offres.html" method="post">
+                <input type="text" name="recherche" placeholder="Que recherchez-vous ?">
+
+                <div class="test">
+
+                  <div id="check">
+                    <input type="checkbox" name="checkrecherche" id="checkrecherche">
+                    <label for="checkrecherche">Recherche dans le titre uniquiment</label><br>
+                    <input type="checkbox" name="checkurgents" id="checkurgents">
+                    <label for="checkurgents">Annonces <span>Urgents</span> uniquiment</label>
+                  </div>
+
+                  <select name="ou">
+                      <option>Toute la France</option>
+                      <option>Autour de moi</option>
+                      <option>Regions Voisins</option>
+                      <option>Ile-de-France</option>
+
+                      <optgroup label="DEPARTEMENT">
+                        <option>Paris</option>
+                        <option>Lille</option>
+                        <option>Monaco</option>
+                        <option>Nantes</option>
+                        <option>Toulouse</option>
+                      </optgroup>
+                  </select>
+
+                </div>
+
+              </form>
+
+            </div>
+
+            <div class="part2">
+
+              <form action="offres.html" method="post">
+
+                <select name="categories">
+
+                  <option>Toutes Catégories</option>
+
+                  <optgroup label="EMPLOI">
+                    <option>Offres d'emploi</option>
+                  </optgroup>
+                  <optgroup label="MULTIMEDIA">
+                    <option>Informatique</option>
+                    <option>Consoles & Jeux Video</option>
+                    <option>Image & son</option>
+                    <option>Téléphonie</option>
+                  </optgroup>
+
+                </select>
+
+                <input type="text" name="ville" placeholder="Ville ou code postal">
+
+              </form>
+
+            </div>
+
+            <div class="part3">
+
+              <form action="offres.html" method="post">
+                <input type="submit" name="subrecherche" value="RECHERCHER">
+              </form>
+
+            </div>
+
+          </div>
+
+          <section class="offres2">
+
+<!-- part1 container  -->
+
+            <article class="offres2part1">
+
+              <div class="offres2part1title">
+                <h2>Toutes <span>27 178 682</span></h2>
+                <h2>Particuliers <span>25 161 353</span></h2>
+                <h2>Professionnels <span>2 017 329</span></h2>
+              </div>
+
+              <select name="trier">
+                <option>Trier par : Date</option>
+                <option>Trier par : Prix</option>
+              </select>
+
+            </article>
+
+<!-- part2 container -->
+
+            <article class="offres2part2">
+
+              <div class="example">
+
+                <div class="vendre">
+
+                  <figure>
+                    <img src="img/hp.jpg" alt="vendre">
+                  </figure>
+
+                  <article>
+
+                    <div class="disc">
+                      <h3>PC Hp</h3>
+                      <p>(pro) Ordinateur</p>
+                      <p>Le Lavandou / Var</p>
+                      <p class="prixvendre">250 €</p>
+                    </div>
+
+                    <div class="quand">
+                      <figure>
+                        <img src="img/like.svg" alt="heart">
+                      </figure>
+                      <p>Aujourd'hui, 10:37</p>
+                    </div>
+
+                  </article>
+
+                </div>
+
+              </div>
+
+              <div class="example">
+
+                <div class="vendre">
+
+                  <figure>
+                    <img src="img/chambre.jpg" alt="vendre">
+                  </figure>
+
+                  <article>
+
+                    <div class="disc">
+                      <h3>Chambre double</h3>
+                      <p>(pro) Hôtels</p>
+                      <p>Paris</p>
+                      <p class="prixvendre">89 €</p>
+                    </div>
+
+                    <div class="quand">
+                      <figure>
+                        <img src="img/like.svg" alt="heart">
+                      </figure>
+                      <p>Aujourd'hui, 11:37</p>
+                    </div>
+
+                  </article>
+
+                </div>
+
+              </div>
+
+              <div class="example">
+
+                <div class="vendre">
+
+                  <figure>
+                    <img src="img/casio.jpg" alt="vendre">
+                  </figure>
+
+                  <article>
+
+                    <div class="disc">
+                      <h3>Casio</h3>
+                      <p>(pro) Casio</p>
+                      <p>Lille / Toucoing</p>
+                      <p class="prixvendre">29 €</p>
+                    </div>
+
+                    <div class="quand">
+                      <figure>
+                        <img src="img/like.svg" alt="heart">
+                      </figure>
+                      <p>Aujourd'hui, 09:37</p>
+                    </div>
+
+                  </article>
+
+                </div>
+
+              </div>
+
+              <div class="example">
+
+                <div class="vendre">
+
+                  <figure>
+                    <img src="img/audi.jpeg" alt="vendre">
+                  </figure>
+
+                  <article>
+
+                    <div class="disc">
+                      <h3>Audi</h3>
+                      <p>Voiture</p>
+                      <p>Lille / Roubaix</p>
+                      <p class="prixvendre">10 900 €</p>
+                    </div>
+
+                    <div class="quand">
+                      <figure>
+                        <img src="img/like.svg" alt="heart">
+                      </figure>
+                      <p>Aujourd'hui, 08:32</p>
+                    </div>
+
+                  </article>
+
+                </div>
+
+              </div>
+
+            </article>
+
+          </section>
+
+<!-- aside -->
+
+          <aside class="une">
+
+            <h4>Annonces A la une</h4>
+
+            <div class="alaune">
+              <figure>
+                <img src="img/maison.jpg" alt="annonces photo">
+              </figure>
+
+              <div class="prixx">
+                <p>Maison 163m</p>
+                <p class="prixvendre">168 000 €</p>
+              </div>
+            </div>
+
+            <div class="alaune">
+              <figure>
+                <img src="img/cu.jpg" alt="annonces photo">
+              </figure>
+
+              <div class="prixx">
+                <p>Cusine IKEA<p>
+                <p class="prixvendre">4 000 €</p>
+              </div>
+            </div>
+
+            <div class="alaune">
+              <figure>
+                <img src="img/test.png" alt="annonces photo">
+              </figure>
+
+              <div class="prixx">
+                <p>Iphone 6</p>
+                <p class="prixvendre">250 €</p>
+              </div>
+            </div>
+
+          </aside>
+
+        </section>
+
+        <footer>
+
+          <section class="end1">
+
+            <ul>
+              <!-- list emploi -->
+              <li class="title"><h3>emploi</h3></li>
+              <li>Offres d'emploi</li>
+
+              <!-- list vehicules -->
+              <li class="title"><h3>vehicules</h3></li>
+              <li>Voitures</li>
+              <li>Motos</li>
+              <li>Caravaning</li>
+              <li>Utilitaires</li>
+              <li>Equipement Auto</li>
+              <li>Equipement Moto</li>
+              <li>Equipement Caravaning</li>
+              <li>Nautisme</li>
+              <li>Equipement Nautisme</li>
+
+              <!-- list immobilier  -->
+              <li class="title"><h3>immobilier</h3></li>
+              <li>Ventes immobilières</li>
+              <li>Locations</li>
+              <li>Colocations</li>
+              <li>Bureaux & Commerces</li>
+            </ul>
+
+            <ul>
+              <!-- list vacances -->
+              <li class="title"><h3>vacances</h3></li>
+              <li>Locations & Gîtes</li>
+              <li>Chambres d'hôtes</li>
+              <li>Campings</li>
+              <li>Hôtels</li>
+              <li>Hébergements insolites</li>
+
+              <!-- list maison -->
+              <li class="title"><h3>maison</h3></li>
+              <li>Ameublement</li>
+              <li>Electroménager</li>
+              <li>Arts de la table</li>
+              <li>Décoration</li>
+              <li>Linge de maison</li>
+              <li>Bricolage</li>
+              <li>Jardinage</li>
+              <li>Vêtements</li>
+              <li>Chaussures</li>
+              <li>Accessoires & Bagagerie</li>
+              <li>Montres & Bijoux</li>
+              <li>Equipement bébé</li>
+              <li>Vêtements bébé</li>
+            </ul>
+
+            <ul>
+              <!-- list multimedia -->
+              <li class="title"><h3>multimedia</h3></li>
+              <li>Informatique</li>
+              <li>Consoles & Jeux vidéo</li>
+              <li>Image & Son</li>
+              <li>Téléphone</li>
+
+              <!-- list loisirs -->
+              <li class="title"><h3>loisirs</h3></li>
+              <li>DVD / Films</li>
+              <li>CD / Musique</li>
+              <li>Livres</li>
+              <li>Animaux</li>
+              <li>Vélos</li>
+              <li>Sports & Hobbies</li>
+              <li>Instruments de musique</li>
+              <li>Collection</li>
+              <li>Jeux & Jouets</li>
+              <li>Vins & Gastronomie</li>
+            </ul>
+
+            <ul>
+              <!-- materiel professionnel -->
+              <li class="title"><h3>materiel professionnel</h3></li>
+              <li>Matériel Agricole</li>
+              <li>Transport - Manutention</li>
+              <li>BTP - Chantier Gros-oeuvre</li>
+              <li>Outillage - Matériaux 2nd-oeuvre</li>
+              <li>Équipements Industriels</li>
+              <li>Restauration - Hôtellerie</li>
+              <li>Fournitures de Bureau</li>
+              <li>Commerces & Marchés</li>
+              <li>Matériel Médical </li>
+
+              <!-- list services -->
+              <li class="title"><h3>services</h3></li>
+              <li>Prestations de services</li>
+              <li>Billetterie</li>
+              <li>Evénements</li>
+              <li>Cours particuliers</li>
+              <li>Covoiturage</li>
+
+              <!-- list autres -->
+              <li class="title"><h3>autres</h3></li>
+              <li>autres</li>
+            </ul>
+
+          </section>
+
+          <section class="end2">
+
+            <ul>
+              <!-- list a propos -->
+              <li class="title"><h3>À propos du boncoin</h3></li>
+              <li>Qui sommes-nous ?</li>
+              <li>Nous rejoindre</li>
+              <li>Impact environnemental</li>
+
+              <!-- list nos application -->
+              <li class="title"><h3>nos applications</h3></li>
+              <li><img src="img/app.png" alt="apple image"><img src="img/google.png" alt="android img"></li>
+            </ul>
+
+            <ul>
+              <!-- list informations -->
+              <li class="title"><h3>Informations légales</h3></li>
+              <li>Conditions générales d'utilisation</li>
+              <li>Règles de diffusion</li>
+              <li>Conditions Générales de Vente</li>
+              <li>Vie privée et cookies</li>
+              <li>Vos droits et obligations</li>
+            </ul>
+
+            <ul>
+              <!-- list professionnels -->
+              <li class="title"><h3>Professionnels</h3></li>
+              <li>Publicité</li>
+              <li>Professionnels de l'immobilier</li>
+              <li>Vos recrutements</li>
+              <li>Toutes nos solutions pros</li>
+            </ul>
+
+            <ul>
+              <!-- list des questions -->
+              <li class="title"><h3>des questions ?</h3></li>
+              <li>Aide</li>
+              <li>Nous contacter</li>
+
+              <!-- list pays -->
+              <li class="title">Vous êtes à l'étranger ?</li>
+              <li><select name="pays">
+                    <option value="france">France</option>
+                    <option value="espagne">Espagne</option>
+                    <option value="portugal">Portugal</option>
+                  </select>
+              </li>
+            </ul>
+
+            <p class="partenaires">Partenaires : <a href="#">Younited Credit</a> - <a href="#">Kudoz</a> - <a href="#">Agriaffaires</a> - <a href="#">MachineryZone</a> - <a href="#">leDénicheur</a> - <a href="#">Swipsi</a></p>
+
+            <div class="last">
+              <p>leboncoin 2006 - 2017</p>
+
+              <div class="lastlast">
+                <p>Retrouvez-nous sur :</p>
+                <img src="img/facebook.svg" alt="facebook logo">
+                <img src="img/twitter.svg" alt="twitter logo">
+              </div>
+            </div>
+
+          </section>
+
+        </footer>
+
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='https://www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+        </script>
+    </body>
+</html>

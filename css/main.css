@@ -1,0 +1,1219 @@
+/*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+    /*#f56b2a*/
+    /*#3873bd*/
+    /*#666 bar bk*/
+    /*#f2f2f2 footer1 bk*/
+    /*#474747 footer2 bk*/
+    /*font open sans*/
+    /*#1a1a1a font color*/
+    /*#fafafa color text with bk color*/
+
+    /*GLOBAL*/
+
+    body{
+      color: #1a1a1a;
+      width: 100%;
+      font-family: 'open sans', sans-serif;
+    }
+
+    *{
+      margin: 0;
+    }
+
+    a{
+      color: inherit;
+      text-decoration: none;
+    }
+
+    /*COMMUN RULES*/
+
+    .navleft ul, nav aside, .down,
+    .pub, .container ul, .end1, .end2 ul,
+    .partenaires, .lastlast p,
+    .link1 i, .link2 i,
+    .photo figure:nth-child(5){
+      display: none;
+    }
+
+    .navleft, .sectionleft{
+      display: flex;
+    }
+
+    figure, img{
+      width: 100%;
+      margin: 0;
+    }
+
+    /*header*/
+
+    header{
+      background: #f56b2a;
+      height: 60px;
+      position: fixed;
+      width: 100%;
+      top: 0px;
+    }
+
+    header figure{
+      width: 150px;
+    }
+
+    .navleft{
+      width: 60%;
+      padding: 10px;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .mobile{
+      width: 60px;
+      background: white;
+      border-radius: 6px;
+      margin-right: 10%;
+      cursor: pointer;
+    }
+
+    .mobile p{
+      text-align: center;
+      text-transform: uppercase;
+      color: #f56b2a;
+      padding: 10px 7px;
+      font-size: 14px;
+    }
+
+    /*.mobile:hover .down{
+      display: flex;
+      flex-direction: column;
+    }*/
+
+    .mobile p:hover{
+      color: #3873bd;
+    }
+
+    .mobile:hover{
+      background: #f2f2f2;
+    }
+
+    /*dropdown apres*/
+    /*.down{
+      position: absolute;
+    }*/
+
+    .container, .containerannonce,
+    .containeroffres{
+      padding: 5%;
+      margin-top: 60px;
+    }
+
+    .sectionleft{
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .sectionleft h1{
+      font-size: 14px;
+      font-weight: normal;
+      width: 100%;
+      text-align: center;
+      margin-bottom: 15px;
+    }
+
+    .sectionleft h1 span{
+      color: #f56b2a;
+    }
+
+    .link1, .link2{
+      padding: 7px 20px;
+      width: 250px;
+      border-radius: 4px;
+      margin-bottom: 15px;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    .link1{
+      background: #3873bd;
+      border: 1px #3873bd solid;
+      color: white;
+    }
+
+    .link1:hover{
+      background: #4185d8;
+      cursor: pointer;
+    }
+
+    .link2{
+      border: 1px #3873bd solid;
+      color: #3873bd;
+    }
+
+    .link2:hover{
+      background: #f2f2f2;
+      cursor: pointer;
+    }
+
+    .regions select{
+      width: 100%;
+      margin: 10px auto;
+      padding: 10px;
+      background: white;
+      border: 1px lightgrey solid;
+      border-radius: 4px;
+    }
+
+    .regions figure{
+      margin: 10px auto;
+    }
+
+    .parag{
+      text-align: center;
+      font-size: 14px;
+    }
+
+    .parag a{
+      color: #3873bd;
+    }
+
+    .parag a:hover{
+      text-decoration: underline;
+    }
+
+    /*ANNONCE PAGE*/
+
+    .containerannonce h1{
+      font-size: 20px;
+      font-weight: normal;
+      color: grey;
+      border-bottom: 1px lightgrey solid;
+      margin-bottom: 30px;
+    }
+
+    .containerannonce h2{
+      font-size: 14px;
+      font-weight: normal;
+      background: #666;
+      color: white;
+      padding: 10px;
+      width: 100%;
+      margin-bottom: 10px;
+    }
+
+    .containerannonce{
+      font-size: 14px;
+    }
+
+    .containerannonce form, .section2sub{
+      padding: 10px;
+    }
+
+    .section1, .section2, .section3{
+      border: 1px lightgrey solid;
+      margin-bottom: 15px;
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .containerannonce form input,
+    .containerannonce form textarea,
+    .containerannonce form select{
+      margin: 5px auto 20px auto;
+      border-radius: 4px;
+    }
+
+    .containerannonce form select,
+    .containerannonce form textarea{
+      width: 100%;
+      border: 1px lightgrey solid;
+      border-radius: 4px;
+    }
+
+    .containerannonce form select{
+      background: white;
+      padding: 10px;
+      border-radius: 4px;
+    }
+
+    .containerannonce form textarea{
+      height: 150px;
+      border-radius: 4px;
+    }
+
+    .containerannonce form input[name="annonce"],
+    .containerannonce form input[name="prix"],
+    .section2 input, .section3 input{
+      width: 94%;
+      padding: 10px;
+      border-radius: 4px;
+      border: 1px lightgrey solid;
+    }
+
+    .photo{
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .photo figure:nth-child(1),
+    .photo figure:nth-child(2),
+    .photo figure:nth-child(3),
+    .photo figure:nth-child(5){
+      width: 30%;
+      margin: 15px 10px 10px 0;
+    }
+
+    .section2 input[name="adressesub"]{
+      background: #f56b2a;
+      color: white;
+      border-radius: 4px;
+      width: 100%;
+      border: 0;
+    }
+
+    .section2sub{
+      width: 100%;
+    }
+
+    form p{
+      background: #accaef;
+      padding: 8px;
+      border-radius: 4px;
+      font-size: 13px;
+    }
+
+    .section2 figure{
+      padding: 10px;
+    }
+
+    .section3 input[name="check1"],
+    .section3 input[name="check2"]{
+      width: inherit;
+      margin: 5px auto;
+    }
+
+    #champs{
+      text-align: right;
+    }
+
+    .containerannonce input[name="valider"]{
+      background: #3873bd;
+      border: 0;
+      border-radius: 4px;
+      color: white;
+      width: 100%;
+      padding: 12px;
+      margin: 10px auto;
+    }
+
+    /*END ANNONCE PAGE*/
+
+    /*PAGE OFFRES*/
+
+    .offres1, .offres2part1 h2 span{
+      display: none;
+    }
+
+    #tt{
+      font-size: 19px;
+      color: grey;
+      margin-top: 50px;
+      margin-bottom: 0;
+      padding: 5%;
+    }
+
+    .containeroffres{
+      display: flex;
+      flex-wrap: wrap;
+      padding: 0;
+      margin-top: inherit;
+      flex-direction: column-reverse;
+    }
+
+    .une{
+      border: #f56b2a 2px solid;
+      margin-bottom: 20px;
+    }
+
+    .une h4{
+      background: #f56b2a;
+      color: white;
+      padding: 10px;
+      text-align: center;
+    }
+
+    .alaune figure{
+      width: 150px;
+      margin-right: 3px;
+    }
+
+    .alaune{
+      display: flex;
+      align-items: center;
+      border-bottom: lightgrey 1px solid;
+    }
+
+    .offres2, .une{
+      width: 93%;
+      margin: auto;
+    }
+
+    .prixvendre{
+      color: #f56b2a;
+      font-weight: bold;
+      margin: 5px auto;
+    }
+
+    .offres2part1title{
+      display: flex;
+      margin: 5px auto;
+    }
+
+    .offres2part1 h2{
+      font-weight: normal;
+      font-size: 18px;
+      border: 1px #ccc solid;
+      padding: 15px 8px;
+      background: #e6e6e6;
+    }
+
+    .offres2part1 h2:nth-child(1){
+      background: white;
+      border-bottom: none;
+    }
+
+    .offres2part1 select{
+      width: 100%;
+      padding: 12px;
+      border: #3873bd 1px solid;
+      border-radius: 4px;
+      color: #3873bd;
+      background: white;
+      margin: 10px auto;
+    }
+
+    .example{
+      border: #ccc 1px solid;
+      padding: 8px;
+    }
+
+    .example p{
+      font-size: 14px;
+    }
+
+    .example h3{
+      font-size: 16px;
+    }
+
+    .vendre figure{
+      width: 150px;
+      margin-right: 5px;
+    }
+
+    .vendre{
+      display: flex;
+    }
+
+    .quand{
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .vendre article{
+      width: 100%;
+    }
+
+    .quand figure{
+      width: 20px;
+    }
+
+    .disc h3{
+      color: #3873bd;
+      margin: 0px auto 8px auto;
+    }
+
+    /*END OF PAGE OFFRES*/
+
+    .end2{
+      background: #474747;
+      color: white;
+    }
+
+    .last{
+      display: flex;
+      width: 90%;
+      margin: auto;
+      font-size: 14px;
+      justify-content: space-between;
+      align-items: center;
+      color: #f2f2f2;
+    }
+
+    .lastlast img{
+      width: 30px;
+      height: 70px;
+      margin-right: 4px;
+    }
+
+    @media (min-width: 480px) {
+
+      .link1 i, .link2 i,
+      .link1, .link2{
+        display: flex;
+      }
+
+      .link1, .link2{
+        align-items: center;
+        justify-content: center;
+      }
+
+      .link1 i, .link2 i{
+        margin-right: 4px;
+        font-size: 16px;
+      }
+    }
+
+    @media (min-width: 768px) {
+
+      .container{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: space-between;
+        align-items: center;
+        padding: 8px;
+      }
+
+      .sectionleft h1{
+        text-align: left;
+        font-size: 16px;
+        margin-bottom: 25px;
+      }
+
+      .regions figure{
+        display: none;
+      }
+
+      .regions{
+        width: 100%;
+        margin: 10px auto;
+      }
+
+      .pub{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        border: 1px lightgrey solid;
+      }
+
+      .pub h2{
+        text-align: center;
+        background: #474747;
+        color: #f2f2f2;
+        font-size: 14px;
+        font-weight: normal;
+        padding: 10px;
+      }
+
+      .link1, .link2{
+        width: 100%;
+        padding: 0;
+      }
+
+      .link1 a, .link2 a{
+        padding: 8px;
+      }
+
+      .sectionleft{
+        width: 40%;
+      }
+
+      .mapfrance{
+        width: 50%;
+      }
+
+      .parag{
+        margin: 15px auto;
+      }
+
+      /*annonce page*/
+
+      .containerannonce form input[name="annonce"],
+      .containerannonce form input[name="prix"],
+      .section2 input, .section3 input{
+        width: 97%;
+      }
+
+        .photo figure:nth-child(1),
+        .photo figure:nth-child(2),
+        .photo figure:nth-child(3){
+          width: 15%;
+        }
+
+    /*end annonce page*/
+
+    /*page offres*/
+
+    .containeroffres{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+
+    .une{
+      width: 25%;
+    }
+
+    .une h4{
+      font-size: 14px;
+    }
+
+    .offres2{
+      width: 70%;
+    }
+
+    .alaune{
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .alaune figure{
+      margin: 10px;
+    }
+
+    /*end page offres*/
+
+    }
+
+
+    @media (min-width: 972px) {
+
+      .navleft ul, nav aside,
+      .end1, .end2,
+      .partenaires, .lastlast p{
+        display: flex;
+      }
+
+      .end2 ul{
+        display: block;
+      }
+
+      .mobile, nav ul li:nth-child(1){
+        display: none;
+      }
+
+      nav{
+        display: flex;
+        align-items: center;
+      }
+
+      .navleft{
+        width: 80%;
+        display: flex;
+        justify-content: flex-start;
+        padding: 10px;
+      }
+
+      nav ul{
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        width: 70%;
+      }
+
+      nav li{
+        font-size: 12px;
+        color: white;
+        text-transform: uppercase;
+      }
+
+      nav li:hover{
+        text-decoration: underline;
+      }
+
+      nav aside{
+        color: white;
+        border-left: 1px white solid;
+        border-right: 1px white solid;
+        padding: 18px;
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+      }
+
+      nav aside:hover{
+        background: white;
+        color: #f56b2a;
+        cursor: pointer;
+      }
+
+      /*page annonce*/
+
+      .containerannonce form input[name="annonce"],
+      .containerannonce form textarea,
+      .section3 input,
+      .section1 form select{
+        width: 50%;
+      }
+
+      .containerannonce form input[name="prix"]{
+        width: 25%;
+      }
+
+      .photo figure:nth-child(1),
+      .photo figure:nth-child(2),
+      .photo figure:nth-child(3),
+      .photo figure:nth-child(5){
+        width: 20%;
+      }
+
+      .photo figure:nth-child(4){
+        display: none;
+      }
+
+      .photo figure:nth-child(5){
+        display: block;
+      }
+
+      .section2{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+      }
+
+      .section2 form input{
+        margin: 5px auto;
+      }
+
+      .fl{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+      }
+
+      .fl input[name="adressesub"]{
+        width: 33%;
+      }
+
+      .fl input[name="adresse"]{
+        width: 60%;
+        margin: 3px 0;
+      }
+
+      .section2 figure{
+        width: 40%;
+      }
+
+      .section2 form{
+        width: 55%;
+      }
+
+      .containerannonce input[name="valider"]{
+        width: 25%;
+      }
+
+      /*end page annonce*/
+
+      /*page offres*/
+
+      #tt{
+        display: none;
+      }
+
+      .offres1{
+        display: flex;
+        justify-content: space-between;
+        background: #e6e6e6;
+        width: 100%;
+        padding: 15px;
+        margin-top: 60px;
+        margin-bottom: 20px;
+        border-bottom: 1px lightgrey solid;
+      }
+
+      .part1 form, .part2 form{
+        display: flex;
+        flex-direction: column;
+      }
+
+      .part1{
+        width: 50%;
+      }
+
+      .part2, .part3{
+        width: 24%;
+      }
+
+      .part3 input{
+        width: 100%;
+      }
+
+      #check label{
+        font-size: 12px;
+      }
+
+      #check{
+        width: 60%;
+        height: 40px;
+      }
+
+      .part1 select{
+        width: 40%;
+      }
+
+      .test{
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .offres1 input, .offres1 select{
+        background: white;
+        border-radius: 4px;
+        padding: 8px;
+        border: 1px #ccc solid;
+      }
+
+      .part3 input{
+        background: #3873bd;
+        color: white;
+        border: 0;
+        padding: 11px;
+        font-size: 14px;
+      }
+
+      .part1, .part2, .part3{
+        font-size: 14px;
+      }
+
+      .part1 input[name="recherche"],
+      .part2 select{
+        margin-bottom: 10px;
+      }
+
+      /*end page offres*/
+
+      footer ul{
+        list-style: none;
+        padding: 0;
+      }
+
+      footer{
+        font-size: 13px;
+      }
+
+      .end1, .end2{
+        padding: 10px;
+        margin: auto;
+      }
+
+      .end1{
+        background: #f2f2f2;
+        color: #3873bd;
+        justify-content: space-between;
+      }
+
+      .end1 ul li:hover, .end2 ul li:hover,
+      .partenaires a:hover{
+        text-decoration: underline;
+        cursor: pointer;
+      }
+
+      .title h3{
+        text-transform: uppercase;
+        font-weight: normal;
+        font-size: 13px;
+        margin: 14px 0;
+        width: 90%;
+      }
+
+      .end1 .title h3{
+        border-bottom: 1px lightgrey solid;
+      }
+
+      .end1 li{
+        margin: 2px auto;
+      }
+
+      .end1 ul, .end2 ul{
+        width: 25%;
+      }
+
+      .end2{
+        flex-wrap: wrap;
+      }
+
+      .end2 li{
+        margin: 14px auto;
+      }
+
+      .end2 li img{
+        width: 100px;
+        margin: 2px;
+      }
+
+      .end2 li select{
+        color: #1a1a1a;
+        width: 100%;
+        padding: 5px;
+      }
+
+      .end2 .title h3{
+        border-bottom: 1px grey solid;
+      }
+
+      .partenaires{
+        width: 100%;
+        padding: 11px;
+        display: flex;
+        justify-content: center;
+        border-top: 1px grey solid;
+        border-bottom: 1px grey solid;
+      }
+
+      .last {
+        font-size: 13px;
+        width: 100%;
+      }
+
+      .lastlast{
+        display: flex;
+        align-items: center;
+      }
+
+      .lastlast p{
+        margin-right: 8px;
+      }
+    }
+
+    @media (min-width: 1024px) {
+
+      .container ul{
+        display: block;
+        list-style: none;
+        width: 25%;
+        padding: 0;
+        text-align: right;
+        color: #3873bd;
+        font-size: 15px;
+      }
+
+      nav ul li:nth-child(1){
+        display: flex;
+      }
+
+      .container ul li:hover{
+        color: #f56b2a;
+      }
+
+      .regions{
+        display: none;
+      }
+
+      .mapfrance{
+        width: 40%;
+      }
+
+      .sectionleft{
+        width: 30%;
+      }
+
+      .container{
+        align-items: flex-start;
+        padding: 20px;
+      }
+
+      .end1, .end2, .navleft, nav aside{
+        padding: 20px;
+      }
+    }
+
+    @media (min-width: 1080px) {
+
+      .section2{
+        align-items: flex-start;
+      }
+
+    }
+
+    /*#f56b2a*/
+    /*#3873bd*/
+    /*#666 bar bk*/
+    /*#f2f2f2 footer1 bk*/
+    /*#474747 footer2 bk*/
+    /*font open sans*/
+    /*#1a1a1a font color*/
+    /*#fafafa color text with bk color*/
+
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after,
+    *:first-letter,
+    *:first-line {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
